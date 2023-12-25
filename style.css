@@ -2,27 +2,57 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background: linear-gradient(to right, #f7931e, #d37222);
     color: #333;
 }
 
-header {
-    background-color: #007bff;
-    color: #fff;
-    text-align: center;
+.container {
+    display: flex;
+}
+
+.left-section {
+    background-color: #eee;
     padding: 20px;
 }
 
-section {
-    padding: 20px;
+.profile-picture {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    /* Inserisci qui la tua foto */
 }
 
-footer {
-    background-color: #007bff;
+.contact-info {
+    /* Inserisci qui le informazioni di contatto */
+}
+
+.right-section {
+    background-color: #fff;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.description {
+    /* Inserisci qui la tua descrizione personale */
+}
+
+.cv-section,
+.teaching-experience-section {
+    margin-top: 20px;
+}
+
+.cv-box,
+.teaching-box {
+    background: linear-gradient(to right, #d37222, #f7931e);
     color: #fff;
-    text-align: center;
     padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.cv-box:hover,
+.teaching-box:hover {
+    opacity: 0.8;
 }
