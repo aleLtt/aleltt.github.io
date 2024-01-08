@@ -1,58 +1,53 @@
 body {
-    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, #f7931e, #d37222);
-    color: #333;
+    font-family: Arial, sans-serif;
+    background-color: #e0e0e0; /* Gray background */
 }
 
 .container {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
 }
 
-.left-section {
-    background-color: #eee;
-    padding: 20px;
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.profile-picture {
-    border-radius: 50%;
-    overflow: hidden;
+.circle {
     width: 100px;
     height: 100px;
+    background-color: transparent;
+    border: 2px solid #ff0000; /* Bright red */
+    border-radius: 50%;
     margin-bottom: 10px;
-    /* Inserisci qui la tua foto */
 }
 
-.contact-info {
-    /* Inserisci qui le informazioni di contatto */
+.rectangle {
+    width: 150px;
+    height: 20px;
+    background-color: transparent;
+    border: 2px solid #ff0000; /* Bright red */
+    margin-bottom: 10px;
 }
 
-.right-section {
-    background-color: #fff;
-    padding: 20px;
-    flex-grow: 1;
+.contacts {
+    display: flex;
+    flex-direction: column;
 }
 
-.description {
-    /* Inserisci qui la tua descrizione personale */
+.page-link {
+    width: 150px;
+    height: 20px;
+    background-color: transparent;
+    border: 2px solid #ff6666; /* Opaque red */
+    margin-bottom: 5px;
 }
 
-.cv-section,
-.teaching-experience-section {
-    margin-top: 20px;
-}
-
-.cv-box,
-.teaching-box {
-    background: linear-gradient(to right, #d37222, #f7931e);
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-    cursor: pointer;
-}
-
-.cv-box:hover,
-.teaching-box:hover {
-    opacity: 0.8;
+.social-media {
+    /* Styles for social media logos go here */
 }
