@@ -33,7 +33,7 @@ body {
     height: 100%;
     object-fit: cover; /* Maintain aspect ratio */
     border-radius: 50%; /* Make the image inside the circle circular */
-    
+    display: block; /* Ensure the image is treated as a block element */
 }
 
 .rectangle {
