@@ -137,10 +137,10 @@ for (let i = 0; i < formInputs.length; i++) {
 
 
 // page navigation variables
-//const navigationLinks = document.querySelectorAll("[data-nav-link]");
-//const pages = document.querySelectorAll("[data-page]");
+const navigationLinks = document.querySelectorAll("[data-nav-link]");
+const pages = document.querySelectorAll("[data-page]");
 
-/*
+
 // add event to all nav link
 for (let i = 0; i < navigationLinks.length; i++) {
   navigationLinks[i].addEventListener("click", function () {
@@ -158,29 +158,3 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
-*/
-
-
-
-// Page navigation variables
-document.addEventListener("DOMContentLoaded", () => {
-  // Navigation links and pages
-  const navigationLinks = document.querySelectorAll("[data-nav-link]");
-  const pages = document.querySelectorAll("[data-page]");
-
-  navigationLinks.forEach((navLink) => {
-    navLink.addEventListener("click", () => {
-      // Get the target page from the button's data attribute
-      const targetPage = navLink.dataset.navLink;
-
-      // Remove active class from all links and pages
-      navigationLinks.forEach((link) => link.classList.remove("active"));
-      pages.forEach((page) => page.classList.remove("active"));
-
-      // Activate the clicked link and corresponding page
-      navLink.classList.add("active");
-      document.querySelector(`[data-page="${targetPage}"]`).classList.add("active");
-    });
-  });
-});
-
